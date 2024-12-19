@@ -1,6 +1,6 @@
 import { nextui } from "@nextui-org/theme";
+import scrollbarHide from "tailwind-scrollbar-hide";
 
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -33,5 +33,5 @@ export default {
     },
   },
   darkMode: "class",
-  plugins: [nextui(), require("tailwind-scrollbar-hide")],
+  plugins: [nextui(), scrollbarHide],
 };
